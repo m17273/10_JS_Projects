@@ -4,6 +4,7 @@ const todosUL = document.getElementById("todos");
 
 const todos = JSON.parse(localStorage.getItem("todos"));
 
+//새로고침을 해도 로컬에 todo가 남아있다면, 리스트에서 계속 보여주기 위한 작업
 if (todos) {
     todos.forEach((todo) => {
         addTodo(todo);
